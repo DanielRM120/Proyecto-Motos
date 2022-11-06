@@ -1,0 +1,13 @@
+-----Creacion del Proyecto React
+
+npx es la creacion de un proyecto node
+
+- npx create-react-app (nombre de la aplicacion)
+
+Ejecutar el proyecto
+
+- Ubicarse en el proyecto con:
+  - cd (nombre del proyecto)
+
+- Ejecutar el proyecto:
+  - npm start
