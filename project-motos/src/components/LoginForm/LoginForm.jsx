@@ -25,10 +25,11 @@ const LoginForm = () => {
 
   return (
     <>
-      <div className="card card-register">
+      <div className="card card-register2">
         <h2>Datos de ingreso</h2>
         <br></br>
-        <div className="mb-3">
+
+        <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
             Usuario :
           </label>
@@ -42,7 +43,7 @@ const LoginForm = () => {
             onChange={handleUsuario}
           />
         </div>
-        <div className="mb-3">
+        <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
             Password :
           </label>
@@ -56,18 +57,25 @@ const LoginForm = () => {
             onChange={handlePassword}
           />
         </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button className="btn btn-success" onClick={ handleShowInfo }>
+        <br></br>
+        <div class="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-click" onClick={ handleShowInfo }>
             Iniciar Sesion
           </button>
         </div>
-        <button className="btn btn-link" onClick={ handleShowInfo }>
-          Olvide mi password
-        </button>
-
         <br></br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button className="btn btn-outline-success" onClick={ handleShowInfo }>
+        
+        <div class="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-link" onClick={ handleShowInfo }>
+            Olvide mi password
+          </button>
+        </div>
+        
+        <br></br>
+        <br></br>
+        
+        <div class="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-click2" onClick={ handleShowInfo }>
             Crear usuario
           </button>
         </div>
