@@ -32,9 +32,9 @@ const RegisterForm = () => {
 
   return (
     <>
-      <div className="card card-register">
+      <div className="card-register3">
         <h2>Formulario de Registro</h2>
-        <div className="mb-3">
+        <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
             First Name:
           </label>
@@ -48,7 +48,7 @@ const RegisterForm = () => {
             onChange={handleFirstName}
           />
         </div>
-        <div className="mb-3">
+        <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
             Last Name:
           </label>
@@ -62,7 +62,7 @@ const RegisterForm = () => {
             onChange={handleLastName}
           />
         </div>
-        <div className="mb-3">
+        <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
             Email:
           </label>
@@ -76,9 +76,14 @@ const RegisterForm = () => {
             onChange={handleEmail}
           />
         </div>
-        <button className="btn btn-success" onClick={ handleShowInfo }>
-          Send
-        </button>
+        <br></br>
+        <br></br>
+        
+        <div class="d-grid gap-2 col-3 mx-auto">
+          <button className="btn btn-click" onClick={ handleShowInfo }>
+            Enviar
+          </button>
+          </div>    
       </div>
     </>
   );
