@@ -4,8 +4,8 @@ const NavBar = () => {
   //Creacion del array que contiene los datos de los navItems
   const navItems = [
     { ruta: "/", icono: "bi bi-house", texto: "Home" },
-    /* { ruta: "/contador", icono: "bi bi-calculator", texto: "Contador" },
-    { ruta: "/saludo", icono: "bi bi-hand-thumbs-up", texto: "Saludo" }, */
+    { ruta: "/contador", icono: "bi bi-calculator", texto: "Contador" },
+    { ruta: "/saludo", icono: "bi bi-hand-thumbs-up", texto: "Saludo" },
   ];
 
   return (
@@ -15,11 +15,12 @@ const NavBar = () => {
           <ul className="navbar-nav">
             {/* usamos el metodo map en el array navItems para renderizar la barra de navegacion */}
             { navItems.map( ( {ruta, icono, texto} ) => {
+              
               return (
                 <li className="nav-item">
                   <Link className="nav-link" to={ ruta }>
                     <i className={ icono }></i>
-                    { texto }
+                    { texto } 
                   </Link>
                 </li>
               );

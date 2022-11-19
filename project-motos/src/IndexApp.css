@@ -34,7 +34,6 @@ main {
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0 0  0 2px rgb(164, 235, 188),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
-
 }
 
 html {
@@ -164,7 +163,7 @@ html {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("./imgs/Mantenimiento.webp");
+      url("./Home/imgs/Mantenimiento.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -192,7 +191,7 @@ html {
   }
   
   #hero2 .img-container {
-    background-image: url("./imgs/mecanica-motos-715x495.jpg");
+    background-image: url("./Home/imgs/mecanica-motos-715x495.jpg");
     background-size: cover;
     background-position: center center;
     height: 500px;
@@ -263,7 +262,7 @@ html {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("./imgs/mejores-motos-mujer-colombia-1.jpg");
+      url("./Home/imgs/mejores-motos-mujer-colombia-1.jpg");
   }
   
   .carta:nth-child(2) {
@@ -272,7 +271,7 @@ html {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("./imgs/certificado-gases-contaminantes-motos.jpg");
+      url("./Home/imgs/certificado-gases-contaminantes-motos.jpg");
   }
   
   .carta:nth-child(3) {
@@ -281,7 +280,7 @@ html {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
       ),
-      url("./imgs/499623455carroya-motostriumph.jpg");
+      url("./Home/imgs/499623455carroya-motostriumph.jpg");
   }
   
   #caracteristicas .container {
@@ -334,7 +333,7 @@ html {
     }
   
     #caracteristicas {
-      background-image: url(./imgs/404-4043567_motos-frente-motos-de-frente-png.png);
+      background-image: url(./Home/imgs/404-4043567_motos-frente-motos-de-frente-png.png);
       background-repeat: no-repeat;
       background-size: 700px;
       background-position-x: calc(100vw - 700px);
