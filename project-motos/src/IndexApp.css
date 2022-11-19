@@ -15,369 +15,21 @@ button {
     margin: 5px;
 }
 */
-/* i {
+i{
   padding-right: 5px;
-} */
+}
+
+main {
+  padding-top: 20px;
+}
 
 /* .card-register {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 50px;
   padding-left: 150px;
   padding-right: 150px;
   margin-left: 200px;
-  margin-right: 200px;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(164, 235, 188),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-} */
-
-html {
-  font-size: 14px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/*-----------------------------------------------------------*/
-
-header .container {
-  padding-right: 40px;
-  padding-left: 40px;
-  transition: 0.1s;
-  background-color: rgba(208, 208, 224, 0.527);
-}
-
-header .navbar-brand {
-  font-size: 1.75em;
-  justify-content: center;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-image: white;
-  margin: 0;
-}
-
-h1 {
-  font-size: 3.5em;
-}
-h2 {
-  font-size: 2.7em;
-}
-h3 {
-  font-size: 2em;
-}
-p {
-  font-size: 1.25em;
-}
-
-nav a {
-  transition: all 0.5s ease;
-  font-size: 1.25em;
-}
-
-ul {
-  justify-content: right;
-  transition: all 0.5s ease;
-}
-
-ul .navbar-nav {
-  transition: 0.5s;
-}
-
-nav a:hover {
-  background: #9335d145;
-  border-radius: 8px;
-  transform: scale(0.95);
-  transition: all 0.5s ease;
-}
-
-button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  background-color: blueviolet;
-  transition: all 0.5s ease;
-}
-
-button:hover {
-  transition: 0.4s;
-  transform: scale(0.92);
-  background: rgb(101, 33, 165);
-  color: #fff;
-}
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-}
-
-/*-------------------CSS DE LISTA MASCOTAS TOP--------------------------*/
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 20%;
-}
-
-td,
-th {
-  border: 1px solid #ccc;
-  text-align: center;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #0a0a0a8e;
-}
-
-/*----------------------------------------------------------------------*/
-
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 100vh;
-  color: white;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./Home/imgs/Mantenimiento.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-#hero h1 {
-  color: white;
-  font-weight: bold;
-}
-
-#hero button {
-  font-size: 1.75em;
-}
-
-#hero2 .container {
-  text-align: center;
-  padding: 100px 12px;
-  display: flex;
-  justify-content: center;
-}
-
-#hero2 h2 {
-  font-weight: bold;
-  text-align: center;
-}
-
-#hero2 .img-container {
-  background-image: url("./Home/imgs/mecanica-motos-715x495.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 400px;
-  border-radius: 10px;
-}
-
-#hero2 {
-  transition: all 0.5s ease;
-}
-
-#hero2:hover {
-  transition: 0.5s;
-  transform: scale(0.98);
-}
-
-#hero2 .texto {
-  width: 50%;
-  text-align: initial;
-  padding: 0px 30px;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.color-titulo-hero2 {
-  color: blueviolet;
-  text-shadow: 0 0 1px rgba(60, 4, 97, 0.411);
-}
-
-#nuestros-beneficios {
-  background-color: rgb(30, 30, 30);
-  color: white;
-  text-align: center;
-}
-
-#nuestros-beneficios .container {
-  padding: 100px 0px;
-}
-
-#nuestros-beneficios h2 {
-  margin-top: 0;
-  font-size: 3.2em;
-  font-weight: bold;
-}
-
-#nuestros-beneficios p {
-  display: none;
-}
-
-#nuestros-beneficios .carta {
-  background-size: cover;
-  background-position: center center;
-  padding: 50px 0px;
-  margin: 30px;
-  border-radius: 15px;
-  transition: all 0.5s ease;
-}
-
-#nuestros-beneficios .carta:hover {
-  transform: scale(0.98);
-}
-
-.carta:first-child {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./Home/imgs/mejores-motos-mujer-colombia-1.jpg");
-}
-
-.carta:nth-child(2) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./Home/imgs/certificado-gases-contaminantes-motos.jpg");
-}
-
-.carta:nth-child(3) {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./Home/imgs/499623455carroya-motostriumph.jpg");
-}
-
-#caracteristicas .container {
-  text-align: center;
-  padding: 270px 12px;
-}
-
-#caracteristicas li {
-  margin: 16px 0px;
-  font-weight: bold;
-  font-size: 1.5em;
-  list-style: none;
-}
-
-footer {
-  background-color: rgb(30, 30, 30);
-  color: white;
-}
-footer .container {
-  text-align: left;
-}
-
-footer h2 {
-  text-align: center;
-  color: rgb(179, 172, 172);
-}
-
-@media (min-width: 768px) {
-  header .container {
-    padding-right: 100px;
-    padding-left: 100px;
-    transition: all 0.1s ease;
-  }
-  #nuestros-beneficios .carta {
-    padding: 15px;
-  }
-
-  #nuestros-beneficios .beneficios {
-    display: flex;
-    justify-content: center;
-  }
-
-  #nuestros-beneficios p {
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  #nuestros-beneficios h3 {
-    margin-top: 0;
-  }
-
-  #caracteristicas {
-    background-image: url(./Home/imgs/404-4043567_motos-frente-motos-de-frente-png.png);
-    background-repeat: no-repeat;
-    background-size: 700px;
-    background-position-x: calc(100vw - 700px);
-    transition: 0.5s;
-  }
-
-  #caracteristicas:hover {
-    transform: scale(0.98);
-  }
-
-  #caracteristicas .container {
-    text-align: initial;
-  }
-
-  #caracteristicas li {
-    margin-left: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  #caracteristicas {
-    background-position-x: calc(100vw - 800px);
-    background-position-y: calc(75vw - 800px);
-  }
-}
-
-/*------login-------------------------------------------------------------------------------*/
-
-/*--------------------------Login Form--------------------*/
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(248, 245, 245);
-    color: rgb(6, 6, 6);
-    text-align: center;
-}
-
-.saludo:hover {
-    color: aqua;  
-}
-
-button {
-    font-size: 25px;
-    padding: 5px;
-    margin: 5px;
-}
-*/
-i {
-  padding-right: 5px;
-}
-
-/* .card-register {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-right: 200px
 } */
 
 .card-register2 {
@@ -424,8 +76,8 @@ i {
 }
 
 .btn-click2 {
-  color: white;
-  background-color: rgb(110, 93, 129);
+color: white;
+background-color: rgb(110, 93, 129);
 }
 
 html {
@@ -438,6 +90,13 @@ html {
 }
 
 /*-----------------------------------------------------------*/
+
+header {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(90deg, white, pink, rgb(150, 1, 150));
+  z-index: 1;
+}
 
 header .container {
   padding-right: 40px;
@@ -484,14 +143,16 @@ ul .navbar-nav {
   transition: 0.5s;
 }
 
-nav a:hover {
+/* nav a:hover {
   background: #9335d145;
   border-radius: 8px;
   transform: scale(0.95);
   transition: all 0.5s ease;
-}
+} */
 
-button {
+/* Estilizado de los botones de Home  */
+
+.btnHome {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px 20px;
@@ -503,12 +164,14 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+.btnHome:hover {
   transition: 0.4s;
   transform: scale(0.92);
   background: rgb(101, 33, 165);
   color: #fff;
 }
+
+/* --------------------------------------------------------------------- */
 
 .container {
   max-width: 1400px;
@@ -559,7 +222,7 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 
-#hero button {
+#hero button{
   font-size: 1.75em;
 }
 
