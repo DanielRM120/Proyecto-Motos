@@ -65,7 +65,7 @@ const LoginForm = () => {
         </div>
         <br></br>
         
-        <div class="d-grid gap-2 col-3 mx-auto">
+        <div class="d-grid">
           <button className="btn btn-link" onClick={ handleShowInfo }>
             Olvide mi password
           </button>

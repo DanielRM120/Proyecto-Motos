@@ -4,7 +4,7 @@ import {
     createRoutesFromElements
   } from "react-router-dom";
 import IndexApp from '../IndexApp'
-import Home from '../Home'
+import Home from '../Home/Home'
 /* import Contador from "../components/Contador/Contador";
 import Saludo from "../components/Saludo/Saludo"; */
 import RegisterForm from "../components/RegisterForm/RegisterForm";
@@ -22,3 +22,4 @@ export const router = createBrowserRouter(
         ]
     )
 )
+
