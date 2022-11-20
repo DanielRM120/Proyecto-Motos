@@ -6,6 +6,7 @@ const RegisterForm = () => {
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   //aqui debo declarar una funcion handle o manejadora para el input firstname
   const handleFirstName = (e) => {
@@ -23,6 +24,12 @@ const RegisterForm = () => {
     const { value } = target
     setEmail( value )
     console.log(email);
+  };
+
+  const handlePassword = ( { target }) => {
+    const { value } = target
+    setPassword( value )
+    console.log(password);
   };
 
   //funcion manejadora del boton
@@ -74,6 +81,20 @@ const RegisterForm = () => {
             id="email"
             value={email}
             onChange={handleEmail}
+          />
+        </div>
+        <div className="d-grid gap-2 col-4 mx-auto">
+          <label htmlFor="" className="form-label">
+            Password:
+          </label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="**********"
+            name="password"
+            id="password"
+            value={password}
+            onChange={handlePassword}
           />
         </div>
         <br></br>
