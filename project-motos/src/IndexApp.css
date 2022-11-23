@@ -19,10 +19,6 @@ i{
   padding-right: 5px;
 }
 
-main {
-  padding-top: 20px;
-}
-
 /* .card-register {
   padding-top: 150px;
   padding-bottom: 50px;
@@ -38,7 +34,7 @@ main {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   color: white;
   background-image: linear-gradient(
       0deg,
@@ -57,7 +53,7 @@ main {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   color: white;
   background-image: linear-gradient(
       0deg,
@@ -91,12 +87,7 @@ html {
 
 /*-----------------------------------------------------------*/
 
-header {
-  position: fixed;
-  width: 100%;
-  background-image: linear-gradient(90deg, white, pink, rgb(150, 1, 150));
-  z-index: 1;
-}
+
 
 header .container {
   padding-right: 40px;
@@ -204,7 +195,7 @@ tr:nth-child(even) {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   color: white;
   background-image: linear-gradient(
       0deg,
@@ -228,7 +219,7 @@ tr:nth-child(even) {
 
 #hero2 .container {
   text-align: center;
-  padding: 150px 12px;
+  padding: 100px 12px;
   display: flex;
   justify-content: center;
 }
@@ -333,7 +324,7 @@ tr:nth-child(even) {
 
 #caracteristicas .container {
   text-align: center;
-  padding: 270px 12px;
+  padding: 250px 12px;
 }
 
 #caracteristicas li {
@@ -411,3 +402,54 @@ footer h2 {
 /*------login-------------------------------------------------------------------------------*/
 
 /*--------------------------Login Form--------------------*/
+
+/* -----------------------Estilizado User ------------------------------ */
+
+.navbaruser {
+  padding-left: 18px;
+  width: 13rem;
+  height: calc(100vh - 10px);
+  border-right: 1px solid gray;
+}
+
+.navbaruser ul {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------
+Perfil
+--------------------------------------------------------------------------------------- */
+.perfil {
+  margin: 50px;
+}
+
+.perfil h2 {
+  text-align: center;
+}
+
+.card-perfil {
+  display: flex;
+  justify-content: center;
+}
+
+.card-perfil .d-grid{
+  margin: 10px;
+}
+
+.card-perfil-botones {
+  display: flex;
+  justify-content: center;
+}
+
+.card-perfil-botones .d-grid{
+  margin: 10px;
+  justify-content: center;
+}

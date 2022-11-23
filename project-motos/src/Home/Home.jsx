@@ -79,7 +79,8 @@ const Home = () => {
                     <li>Lunes a Sábado de 7 AM a 5 PM</li>
                     <br />
                 </div>
-            </footer></>
+            </footer>
+        </>
     )
 
 }

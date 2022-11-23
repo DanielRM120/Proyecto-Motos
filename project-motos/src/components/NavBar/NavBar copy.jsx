@@ -4,8 +4,8 @@ const NavBar = () => {
   //Creacion del array que contiene los datos de los navItems
   const navItems = [
     { ruta: "/", icono: "bi bi-house", texto: "Home" },
-    { ruta: "/contador", icono: "bi bi-calculator", texto: "Contador" },
-    { ruta: "/saludo", icono: "bi bi-hand-thumbs-up", texto: "Saludo" },
+    // { ruta: "/contador", icono: "bi bi-calculator", texto: "Contador" },
+    // { ruta: "/saludo", icono: "bi bi-hand-thumbs-up", texto: "Saludo" },
   ];
 
   return (
