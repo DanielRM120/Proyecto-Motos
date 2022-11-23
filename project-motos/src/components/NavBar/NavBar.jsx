@@ -1,16 +1,16 @@
-
 import NavItems from "./NavItems";
 
 const NavBar = () => {
   //Creacion del array que contiene los datos de los navItems
   const navItemsLeft = [
     { ruta: "/", icono: "bi bi-house", texto: "Home" },
+    { ruta: "/user", icono: "bi bi-workpace", texto: "Usuario" },
     /* { ruta: "/contador", icono: "bi bi-calculator", texto: "Contador" },
     { ruta: "/saludo", icono: "bi bi-hand-thumbs-up", texto: "Saludo" }, */
   ];
 
   const navItemsRight = [
-    {ruta: "/register", icono: "bi bi-box-arrow-in-right", texto: "Register"},
+    {ruta: "/register", icono: "bi bi-door-open", texto: "Register"},
     {ruta: "/login", icono: "bi bi-person", texto: "Login"}
   ]
 
