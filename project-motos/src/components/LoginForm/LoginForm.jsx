@@ -3,13 +3,13 @@ import { useState } from "react";
 
 const LoginForm = () => {
   //para poder tener el control del input usuario debemos crear un useState
-  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
   //aqui debo declarar una funcion handle o manejadora para el input usuario
-  const handleUsuario = (e) => {
-    setUsuario(e.target.value);
-    console.log(usuario);
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    console.log(email);
   };
 
   //manejadoras de lastname y email
@@ -20,7 +20,7 @@ const LoginForm = () => {
 
   //funcion manejadora del boton
   const handleShowInfo = () => {
-    alert(`Su usuario es ${usuario}`);
+    alert(`Su usuario es ${email}`);
   };
 
   return (
@@ -31,16 +31,16 @@ const LoginForm = () => {
 
         <div className="d-grid gap-2 col-4 mx-auto">
           <label htmlFor="" className="form-label">
-            Usuario :
+            E-mail:
           </label>
           <input
             type="text"
             className="form-control"
-            placeholder="usuario"
-            name="usuario"
-            id="usuario"
-            value={usuario}
-            onChange={handleUsuario}
+            placeholder="E-mail"
+            name="email"
+            id="email"
+            value={email}
+            onChange={handleEmail}
           />
         </div>
         <div className="d-grid gap-2 col-4 mx-auto">
