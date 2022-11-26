@@ -100,12 +100,12 @@ const Perfil = () => {
             </div>
             <br /><br />
             <div className="card-perfil-botones">
-              <div class="d-grid gap-2 col-3">
+              <div className="d-grid gap-2 col-3">
                 <button className="btn btn-click" onClick={handleUpdate}>
                   Actualizar
                 </button>
               </div>
-              <div class="d-grid gap-2 col-3">
+              <div className="d-grid gap-2 col-3">
                 <button className="btn btn-click" onClick={handleDelete}>
                   Eliminar
                 </button>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { userSignUp } from "../../api/userApi";
 import InputRegister from "./InputRegister";
 
 const RegisterForm = () => {
@@ -12,28 +13,41 @@ const RegisterForm = () => {
     password:''
   });
 
+  const {firstname, lastname, email, password} = inputs
+
   //Funcion manejadora para controlar los valores de los inputs del formulario
   const handleInputsForm = (e) => {
     //operador spreep es el ...inputs que lo que hace es hacer una clonacion del objeto
     setInputs({ ...inputs, [e.target.name]: e.target.value })
-  }
+  };
 
   // //funcion manejadora del formulario
-   const handleOnSubmit = ( e ) => {
-    e.preventdefault(); //Evitamos que se autorecargue, para poder enviar los datos a la base de datos
-    alert(JSON.stringify(inputs))
+   const handleOnSubmit = async ( e ) => {
+    e.preventDefault(); //Evitamos que se autorecargue, para poder enviar los datos a la base de datos
+  
     // Envio de datos al server
-
-    //Limpiar formulario
-    setInputs({
-      firstname:'',
-      lastname:'',
-      email:'',
-      password:''
-    })
-
-
-   };
+    // validacion de que los inputs no esten vacios
+    if(!firstname || !lastname || !email || !password){
+      alert('All inputs are required')
+    }else{
+      const result = await userSignUp(inputs) //llamamos a la api
+      if(result.status){
+        alert(result.message)
+        //limpiamos el formulario
+        setInputs( {
+          firstname:'',
+          lastname:'',
+          email:'',
+          password:''
+        })
+        setTimeout(() => {
+          window.location.href = '/'},
+          3000)
+      } else {
+        alert(result.message)
+      }
+    }
+    }
 
   return (
     <>
@@ -50,7 +64,7 @@ const RegisterForm = () => {
           <br></br>
           <br></br>
 
-          <div class="mx-auto">
+          <div className="mx-auto">
             <button type="submit " className="btn btn-click">
               Enviar
             </button>

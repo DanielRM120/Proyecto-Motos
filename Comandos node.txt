@@ -1,0 +1,39 @@
+-----Creacion del Proyecto React
+
+FRONTEND
+
+npx es la creacion de un proyecto node
+
+- npx create-react-app (nombre de la aplicacion)
+
+Ejecutar el proyecto
+
+- Ubicarse en el proyecto con:
+  - cd (nombre del proyecto)
+
+- Ejecutar el proyecto:
+  - npm start
+
+BACKEND
+
+Crear el archivo para Backend
+
+- Crear carpeta de backend
+ - npm init
+  - Dara unas preguntas:
+   - en entry point: (se pone server.js)
+
+Instalacion de dependencias (se puede ver en package.json)
+
+- Instalacion de Express
+ - npm install express --save
+
+- Instalacion de nodemon (nos permite reiniciar el servidor sin detener la ejecucion para asimilar los cambios)
+ - npm install --save-dev nodemon
+
+- Instalacion de mongoose (libreria para la conexion a la base datos, modelos de la base de datos y tambien crear las centencias o consultas para el CRUD)
+ - npm install mongoose
+
+
+
+
