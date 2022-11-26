@@ -1,15 +1,16 @@
 import React from 'react'
 import { useState } from "react";
 
+
 const LoginForm = () => {
   //para poder tener el control del input usuario debemos crear un useState
-  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   
   //aqui debo declarar una funcion handle o manejadora para el input usuario
-  const handleUsuario = (e) => {
-    setUsuario(e.target.value);
-    console.log(usuario);
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    console.log(email);
   };
 
   //manejadoras de lastname y email
@@ -19,8 +20,31 @@ const LoginForm = () => {
   };
 
   //funcion manejadora del boton
-  const handleShowInfo = () => {
-    alert(`Su usuario es ${usuario}`);
+  const handleOnSubmit = (e) => {
+      e.preventDefault(); //Evitamos que se autorecargue, para poder enviar los datos a la base de datos
+      
+      setTimeout(() => {window.location.href = '/perfil'})
+    
+    // if(!email || !password){
+    //   alert('All inputs are required')
+    // }else{
+    //   const result = await userLogin(email) //llamamos a la api
+    //   if(result.status){
+    //     alert(result.message)
+    //     //limpiamos el formulario
+    //     setEmail( {
+    //       email: ''
+    //     })
+    //     setPassword({
+    //       password: ''
+    //     })
+    //     setTimeout(() => {
+    //       window.location.href = '/perfil'},
+    //       2000)
+    //   } else {
+    //     alert(result.message)
+    //   }
+    // }
   };
 
   return (
@@ -28,22 +52,22 @@ const LoginForm = () => {
       <div className="card card-register2">
         <h2>Datos de ingreso</h2>
         <br></br>
-
-        <div className="d-grid gap-2 col-4 mx-auto">
+        <form action="" onSubmit={handleOnSubmit}>
+        <div className="">
           <label htmlFor="" className="form-label">
-            Usuario :
+            E-mail:
           </label>
           <input
             type="text"
             className="form-control"
-            placeholder="usuario"
-            name="usuario"
-            id="usuario"
-            value={usuario}
-            onChange={handleUsuario}
+            placeholder="E-mail"
+            name="email"
+            id="email"
+            value={email}
+            onChange={handleEmail}
           />
         </div>
-        <div className="d-grid gap-2 col-4 mx-auto">
+        <div className="">
           <label htmlFor="" className="form-label">
             Password :
           </label>
@@ -55,18 +79,19 @@ const LoginForm = () => {
             id="password"
             value={password}
             onChange={handlePassword}
-          />
+            />
         </div>
         <br></br>
-        <div class="d-grid gap-2 col-3 mx-auto">
-          <button className="btn btn-click" onClick={ handleShowInfo }>
+        <div class="">
+          <button type='submit' className="btn btn-click">
             Iniciar Sesion
           </button>
         </div>
+        </form>
         <br></br>
         
         <div class="d-grid">
-          <button className="btn btn-link" onClick={ handleShowInfo }>
+          <button className="btn btn-link" >
             Olvide mi password
           </button>
         </div>
@@ -74,8 +99,8 @@ const LoginForm = () => {
         <br></br>
         <br></br>
         
-        <div class="d-grid gap-2 col-3 mx-auto">
-          <button className="btn btn-click2" onClick={ handleShowInfo }>
+        <div class="">
+          <button className="btn btn-click2">
             Crear usuario
           </button>
         </div>
