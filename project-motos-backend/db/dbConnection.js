@@ -1,5 +1,5 @@
-const UserName = 'DanielRM'
-const Password = 'genius14'
+const UserName = '(usuario)'
+const Password = '(password)'
 const DataBase = 'DBProjectMotos'
 //Se puede mejorar con variables de torno
 
